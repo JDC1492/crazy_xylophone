@@ -7,21 +7,22 @@
     <title>1 thing a Day</title>
   </head>
   <body>
+    <p>1. Change the Backgroundcolor with a button click.</p>
     <div>
-      <p>1. Change the Backgroundcolor with a button click.</p>
       <button id="blue">Background Green</button>
     </div>
+  </br>
+    <p>2. Multiple inputs appending practice </p>
     <div>
-      <br>
-      <p>2. Character Select </p>
       <form class='party-form'>
-        <label>Choose your character!</label></br>
-        <input type="radio" class="char-select">Warrior</input></br>
-        <input type="radio" class="char-select">Mage</input></br>
-        <input type="radio" class="char-select">Cleric</input></br>
-        <input type="radio" class="char-select">Wizard</input></br>
-        <input type="submit" value="Add to your party!">
+        <label>Party Creation</label></br>
+        Warrior:<input type="text" id="warrior" /> </br>
+        Mage:<input type="text" id="mage"/> </br>
+        Cleric:<input type="text" id="cleric"/> </br>
+        Wizard:<input type="text" id="wizard"/> </br>
+        <input type="submit" value="Create your party!">
       </form>
+      <div class="party"></div>
     </div>
   </body>
   <script src="everyday.js"></script>
