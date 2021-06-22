@@ -27,3 +27,12 @@ form.addEventListener("submit", (event) => {
     return (party.innerText += "All job spaces must be occupied to continue");
   }
 });
+
+party.addEventListener("mouseover", (event) =>{
+  // debugger
+  event.target.style.backgroundColor = "#6F8FAF";
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 500);
+}, false)
+
