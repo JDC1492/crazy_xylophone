@@ -28,11 +28,27 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-party.addEventListener("mouseover", (event) =>{
-  // debugger
-  event.target.style.backgroundColor = "#6F8FAF";
-  setTimeout(function() {
-    event.target.style.backgroundColor = "";
-  }, 500);
-}, false)
+party.addEventListener(
+  "mouseover",
+  (event) => {
+    // debugger
+    event.target.style.backgroundColor = "#6F8FAF";
+    setTimeout(function () {
+      event.target.style.backgroundColor = "";
+    }, 500);
+  },
+  false
+);
 
+//three
+const i = 0;
+const txt = "Lorem ipsum typing effect!"; /* The text */
+const speed = 70; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("cursor").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
