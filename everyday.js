@@ -54,3 +54,8 @@ function typeWriter() {
   }
 }
 // Four
+let changeIt = function () {
+  const colors = ["red", "magenta", "blue", "yellow"];
+  let random = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = random;
+};
