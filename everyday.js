@@ -1,12 +1,14 @@
 const button = document.getElementById("blue");
-const form = document.querySelector(".party-form");
-const party = document.querySelector(".party");
+
 //First
 button.addEventListener("click", () => {
   document.body.style.backgroundColor = "#00FF00";
 });
 
 //Second
+const partyForm = document.querySelector(".party-form");
+const party = document.querySelector(".party");
+
 const appendToPage = function (a, b, c, d) {
   return `${a}, will act as the Warrior.</br>
   ${b}, will act as the Mage.</br>
@@ -15,7 +17,7 @@ const appendToPage = function (a, b, c, d) {
   `;
 };
 
-form.addEventListener("submit", (event) => {
+partyForm.addEventListener("submit", (event) => {
   event.preventDefault();
   let warrior = event.target.warrior.value;
   let mage = event.target.mage.value;
@@ -59,3 +61,16 @@ let changeIt = function () {
   let random = colors[Math.floor(Math.random() * colors.length)];
   document.getElementById("color").style.backgroundColor = random;
 };
+
+//Five
+//select the numbers, and be able to take whatever numbers in the inputs and give the proper total. in this case the sum of the numbers.
+const mathForm = document.getElementById('math-form')
+let num1 = document.getElementById('num1').value
+let num2 = document.getElementById('num2').value
+
+mathForm.addEventListener('submit', (event){
+  event.preventDefault()
+  debugger
+})
+
+const addItUp = (num1, num2) => num1 + num2;
