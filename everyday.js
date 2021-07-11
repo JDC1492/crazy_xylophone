@@ -64,13 +64,16 @@ let changeIt = function () {
 
 //Five
 //select the numbers, and be able to take whatever numbers in the inputs and give the proper total. in this case the sum of the numbers.
-const mathForm = document.getElementById('math-form')
-let num1 = document.getElementById('num1').value
-let num2 = document.getElementById('num2').value
+const mathForm = document.getElementById("math-form");
 
-mathForm.addEventListener('submit', (event){
-  event.preventDefault()
-  debugger
-})
+mathForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  if (num1 && num2) {
+    console.log(addItUp(num1, num2));
+  }
+  debugger;
+});
 
 const addItUp = (num1, num2) => num1 + num2;
