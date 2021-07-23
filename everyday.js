@@ -71,11 +71,18 @@ mathForm.addEventListener("submit", (event) => {
   event.preventDefault();
   let num1 = Number(document.getElementById("num1").value);
   let num2 = Number(document.getElementById("num2").value);
-  if (num1 && num2) {
+  let addBtn = document.getElementById("add");
+
+  let seeIfClicked = function () {
+    addBtn.clicked;
+  };
+  if (num1 && num2 && seeIfClicked()) {
+    debugger;
     totalSection.innerText += `The total is:` + addItUp(num1, num2);
   }
 });
 
 const addItUp = (num1, num2) => num1 + num2;
+const whatsTheProduct = (num1, num2) => num1 * num2;
 
 //six
