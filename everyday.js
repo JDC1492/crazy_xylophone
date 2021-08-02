@@ -74,10 +74,10 @@ mathForm.addEventListener("submit", (event) => {
   let addBtn = document.getElementById("add");
 
   let seeIfClicked = function () {
-    addBtn.clicked;
+    addBtn;
   };
+  debugger;
   if (num1 && num2 && seeIfClicked()) {
-    debugger;
     totalSection.innerText += `The total is:` + addItUp(num1, num2);
   }
 });
