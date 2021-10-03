@@ -67,18 +67,18 @@ let changeIt = function () {
 const mathForm = document.getElementById("math-form");
 let totalSection = document.getElementById("total-section");
 let addBtn = document.getElementById("add");
+let mltBtn = document.getElementById("multiply");
 
-addBtn.addEventListener("click", (event) => {
+mathForm.addEventListener("submit", (event) => {
   event.preventDefault();
   let num1 = Number(document.getElementById("num1").value);
   let num2 = Number(document.getElementById("num2").value);
 
-  let seeIfClicked = function () {
-    addBtn;
-  };
   debugger;
-  if (num1 && num2 && seeIfClicked()) {
+  if (num1 && num2 && event.target.id === "add") {
     totalSection.innerText += `The total is:` + addItUp(num1, num2);
+  } else if (num1 && num2 && event.target.id === "multiply") {
+    totalSection.innerText += `The product is:` + whatsTheProduct(num1, num2);
   }
 });
 
