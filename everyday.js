@@ -69,15 +69,21 @@ let totalSection = document.getElementById("total-section");
 let addBtn = document.getElementById("add");
 let mltBtn = document.getElementById("multiply");
 
-mathForm.addEventListener("submit", (event) => {
+addBtn.addEventListener("click", (event) => {
   event.preventDefault();
   let num1 = Number(document.getElementById("num1").value);
   let num2 = Number(document.getElementById("num2").value);
-
-  debugger;
+  // debugger;
   if (num1 && num2 && event.target.id === "add") {
     totalSection.innerText += `The total is:` + addItUp(num1, num2);
-  } else if (num1 && num2 && event.target.id === "multiply") {
+  }
+});
+
+mltBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  if (num1 && num2 && event.target.id === "multiply") {
     totalSection.innerText += `The product is:` + whatsTheProduct(num1, num2);
   }
 });
