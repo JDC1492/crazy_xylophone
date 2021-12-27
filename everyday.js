@@ -92,3 +92,15 @@ const addItUp = (num1, num2) => num1 + num2;
 const whatsTheProduct = (num1, num2) => num1 * num2;
 
 //six
+const mainBtn = document.querySelector(".main");
+const subBtn = document.querySelector(".sub");
+
+mainBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  subBtn.classList.add("hidden");
+  if (subBtn.classList.value === "sub hidden") {
+    subBtn.style.display = "none";
+  } else if (subBtn.classList.value === "sub") {
+    subBtn.style.display = "compact";
+  }
+});
