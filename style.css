@@ -1,3 +1,9 @@
 p div#addition {
   text-align: center;
 }
+
+#box-shad {
+  border: 3px black solid;
+  width: 500px;
+  box-shadow: 5px 5px 5px 5px green;
+}

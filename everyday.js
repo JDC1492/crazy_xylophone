@@ -95,12 +95,8 @@ const whatsTheProduct = (num1, num2) => num1 * num2;
 const mainBtn = document.querySelector(".main");
 const subBtn = document.querySelector(".sub");
 
-mainBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+const hideIt = () => {
   subBtn.classList.add("hidden");
-  if (subBtn.classList.value === "sub hidden") {
-    subBtn.style.display = "none";
-  } else if (subBtn.classList.value === "sub") {
-    subBtn.style.display = "compact";
-  }
-});
+};
+
+mainBtn.onClick = hideIt();
