@@ -1,0 +1,22 @@
+{
+  "name": "mario-kaboom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "everyday.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDC1492/crazy_xylophone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDC1492/crazy_xylophone/issues"
+  },
+  "homepage": "https://github.com/JDC1492/crazy_xylophone#readme",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}
